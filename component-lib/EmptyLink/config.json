@@ -1,0 +1,1 @@
+{"name":"EmptyLink","ownerType":"LINK","description":"一个透明的链接，比如背景图上有一个Logo，可以用这个透明链接盖在Logo上面","options":{"script":false,"draggable":true,"resizableSelector":".link"},"html":{"link":{"label":"跳转链接","value":"http://www.37.com/"}},"css":{".link":{"label":"链接尺寸","editable":["width","height"]}}}

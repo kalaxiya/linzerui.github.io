@@ -1,0 +1,1 @@
+{"name":"ImageLink","ownerType":"LINK","description":"带跳转链接的图片，一般拿来添加一个Logo之类的","options":{"script":false,"draggable":true,"resizableSelector":".root"},"html":{"link":{"label":"跳转链接","value":"http://www.37.com/"},"image":{"label":"图片","value":"http://localhost:3000/component-lib/ImageLink/images/logo.png"}},"css":{".root":{"label":"图片尺寸","editable":["width","height"]}}}

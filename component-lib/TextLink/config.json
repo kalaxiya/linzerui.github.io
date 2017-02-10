@@ -1,0 +1,1 @@
+{"name":"TextLink","ownerType":"LINK","description":"添加一个文字链接","options":{"script":false,"draggable":true,"resizableSelector":""},"html":{"href":{"label":"跳转链接","value":"http://www.37.com/"},"text":{"label":"链接文字","value":"37首页"}},"css":{".link":{"label":"文字","editable":["font-size","color"]},".link:hover":{"label":"鼠标经过","editable":["color"]}}}

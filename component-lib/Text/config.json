@@ -1,0 +1,1 @@
+{"name":"Text","ownerType":"TEXT","description":"添加一段文字","options":{"script":false,"draggable":true,"resizableSelector":".root"},"html":{"text":{"label":"内容","value":"一些文字","rich":true}},"css":{".root":{"label":"文字","editable":["width","height","font-size","line-height","padding-left","padding-right","padding-top","padding-bottom","background-color","background-image"]}}}
