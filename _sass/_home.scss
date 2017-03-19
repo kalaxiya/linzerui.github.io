@@ -1,0 +1,12 @@
+.home h1 {
+    font-family: $spec-font-family;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    letter-spacing: 5px;
+}

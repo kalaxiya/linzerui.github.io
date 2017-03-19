@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<ul class="post-list">
+    {% for post in site.posts %}
+    <li>
+        <div class="post-tag">
+            <span class="tag-icon">
+                <svg width="21" height="21" viewBox="0 0 21 21">
+                    <path d="M4.662 8.72l-1.23 1.23a1.753 1.753 0 0 0 .004 2.477l5.135 5.135c.7.693 1.8.688 2.48.005l1.23-1.23 5.35-5.346c.31-.31.54-.92.51-1.36l-.32-4.29c-.09-1.09-1.05-2.06-2.15-2.14l-4.3-.33c-.43-.03-1.05.2-1.36.51l-.79.8-2.27 2.28-2.28 2.27zm9.826-.98a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5z" fill-rule="evenodd"></path>
+                </svg>
+            </span>
+
+            <a href="/tags/{{ post.tags | first | slugify }}/">{{ post.tags }}</a>
+        </div>
+
+        <div class="post-thumb">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+                <h2>
+                    {{ post.title }}
+                </h2>
+
+                <p class="post-excerpt" href="{{ post.url | prepend: site.baseurl }}">
+                    <span>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</span>
+                </p>
+            </a>
+        </div>
+
+        <div class="post-readmore">
+            <a href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
+        </div>
+
+        <div class="post-meta">
+            <span class="date-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 50 50">
+                    <path d="M 11 0 C 10.4 0 10 0.4 10 1 L 10 7 C 10 7.6 10.4 8 11 8 L 13 8 C 13.6 8 14 7.6 14 7 L 14 1 C 14 0.4 13.6 0 13 0 L 11 0 z M 37 0 C 36.4 0 36 0.4 36 1 L 36 7 C 36 7.6 36.4 8 37 8 L 39 8 C 39.6 8 40 7.6 40 7 L 40 1 C 40 0.4 39.6 0 39 0 L 37 0 z M 2 4 C 0.841 4 0 4.841 0 6 L 0 14 L 50 14 L 50 6 C 50 4.841 49.159 4 48 4 L 42 4 L 42 7 C 42 8.71 40.71 10 39 10 L 37 10 C 35.29 10 34 8.71 34 7 L 34 4 L 16 4 L 16 7 C 16 8.71 14.71 10 13 10 L 11 10 C 9.29 10 8 8.71 8 7 L 8 4 L 2 4 z M 0 16 L 0 48 C 0 49.159 0.841 50 2 50 L 48 50 C 49.159 50 50 49.159 50 48 L 50 16 L 0 16 z M 8 23 L 15 23 L 15 28 L 8 28 L 8 23 z M 17 23 L 24 23 L 24 28 L 17 28 L 17 23 z M 26 23 L 33 23 L 33 28 L 26 28 L 26 23 z M 35 23 L 42 23 L 42 28 L 35 28 L 35 23 z M 8 30 L 15 30 L 15 35 L 8 35 L 8 30 z M 17 30 L 24 30 L 24 35 L 17 35 L 17 30 z M 26 30 L 33 30 L 33 35 L 26 35 L 26 30 z M 35 30 L 42 30 L 42 35 L 35 35 L 35 30 z M 8 37 L 15 37 L 15 42 L 8 42 L 8 37 z M 17 37 L 24 37 L 24 42 L 17 42 L 17 37 z M 26 37 L 33 37 L 33 42 L 26 42 L 26 37 z M 35 37 L 42 37 L 42 42 L 35 42 L 35 37 z"/>
+                </svg>
+            </span>
+            {{ post.date | date: "%b %-d, %Y" }}
+        </div>
+    </li>
+    {% endfor %}
+</ul>

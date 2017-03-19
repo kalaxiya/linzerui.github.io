@@ -1,38 +1,20 @@
-<footer class="site-footer">
+<a class="mask"></a>
 
-  <div class="wrapper">
+<script>
+    var body = document.body
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+    document.querySelector('.aside-toggle').addEventListener('click', function(e) {
+        e.preventDefault()
+        toggleNav()
+    }, false)
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
+    document.querySelector('.mask').addEventListener('click', toggleNav, false)
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
+    function toggleNav() {
+        body.classList.toggle('opened')
+    }
 
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-
-  </div>
-
-</footer>
+    [].slice.call(document.querySelectorAll('.post-content a')).forEach(function(a) {
+        a.setAttribute('target', '_blank')
+    })
+</script>

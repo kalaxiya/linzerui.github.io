@@ -1,0 +1,55 @@
+.post-list {
+    list-style: none;
+    margin: 0;
+}
+
+.post-list h2 {
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.post-list h2 a {
+    display: block;
+}
+
+.post-list li {
+    border-radius: 3px;
+    margin-bottom: 40px;
+    padding: 10px 20px 15px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.12);
+    transition: all 300ms ease;
+    // border: 1px solid rgba(0,0,0,.09);
+}
+
+.post-tag {
+    margin-bottom: 10px;
+}
+
+.post-readmore {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.tag-icon, .date-icon {
+    display: inline-block;
+    vertical-align: middle;
+    fill: rgba(0,0,0,.44);
+    margin-right: 5px;
+    height: 21px;
+    line-height: 21px;
+}
+
+.post-excerpt {
+    display: block;
+    margin: 15px 0 10px;
+}
+
+.post-meta {
+    font-size: 12px;
+    margin: 0;
+}
+
+.tag-label {
+    margin-bottom: 40px;
+}
