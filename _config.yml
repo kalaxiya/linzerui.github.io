@@ -7,9 +7,9 @@
 
 # Site settings
 title: LIN
-description: 人生天地间，忽如远行客
+description: GO
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://linnn.me" # the base hostname & protocol for your site
+url: "https://linzerui.github.io" # the base hostname & protocol for your site
 excerpt_separator: <!-- more -->
 
 permalink: pretty
